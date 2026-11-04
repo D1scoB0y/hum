@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286eabe10b4751346b9ad3584f552d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PinView
-  _outline: {fileID: 0}
+  _notConnected: {fileID: 2100000, guid: 47226f8d874c6944790c92abe4541eb2, type: 2}
+  _selected: {fileID: 2100000, guid: 2d48c033e4f47df498fe9262bea581b9, type: 2}
   _none: {fileID: 2100000, guid: 11f234ad3db2abb4b915392e58791789, type: 2}
   _high: {fileID: 2100000, guid: a72642c161ba4554f89fdc31e367e18e, type: 2}
   _low: {fileID: 2100000, guid: b50772cf3ff61b145813b8891356f28e, type: 2}

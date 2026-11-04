@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a22d2a346c6ae004c8eb91599b066b3e
+guid: 96daf92d0582382499514f774b6ebb6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3757669169781762673
-    second: menu7_0
+      213: -1332003750719900898
+    second: focus_frame5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,23 +102,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu7_0
+      name: focus_frame5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4000
-        height: 6000
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17a6740733ce52430800000000000000
-      internalID: 3757669169781762673
+      spriteID: e133ade55a5c38de0800000000000000
+      internalID: -1332003750719900898
       vertices: []
       indices: 
       edges: []
@@ -127,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bd3202a4986be3542beb96441eafe7e3
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menu7_0: 3757669169781762673
+      focus_frame5_0: -1332003750719900898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

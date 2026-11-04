@@ -2,12 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public interface IInteractable
-{
-    void Interact(InteractionContext ctx);
-    string GetDescription(InteractionContext ctx);
-}
-
 public class InteractionContext
 {
     public Inventory Inventory { get; }
@@ -27,7 +21,7 @@ public class Interaction : MonoBehaviour
     [SerializeField] private LayerMask _interactionMask;
 
     private InputAction _interactAction;
-    public IInteractable Target { get; private set; }
+    public Interactable Target { get; private set; }
     public InteractionContext Context { get; private set; }
 
     public event Action OnTargetChanged;
@@ -46,6 +40,7 @@ public class Interaction : MonoBehaviour
     private void OnDisable()
     {
         _interactAction.performed -= OnInteract;
+        SetTarget(null);
     }
 
     private void Update()
@@ -56,7 +51,7 @@ public class Interaction : MonoBehaviour
             SetTarget(target);
     }
 
-    private IInteractable FindTarget()
+    private Interactable FindTarget()
     {
         Ray ray = _playerCamera.ViewportPointToRay(
             new Vector3(0.5f, 0.5f, 0f)
@@ -66,10 +61,10 @@ public class Interaction : MonoBehaviour
                 ray, out RaycastHit hit, _interactionDistance, _interactionMask))
             return null;
 
-        return hit.collider.GetComponentInParent<IInteractable>();
+        return hit.collider.GetComponentInParent<Interactable>();
     }
 
-    private void SetTarget(IInteractable target)
+    private void SetTarget(Interactable target)
     {
         Target = target;
         OnTargetChanged?.Invoke();
@@ -78,5 +73,6 @@ public class Interaction : MonoBehaviour
     private void OnInteract(InputAction.CallbackContext _)
     {
         Target?.Interact(Context);
+        SetTarget(null);
     }
 }

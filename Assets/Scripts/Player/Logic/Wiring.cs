@@ -3,8 +3,10 @@ using UnityEngine;
 public class Wiring : MonoBehaviour
 {
     [SerializeField] private GameObject _wirePrefab;
+    [SerializeField] private GameObject _wireGhostPrefab;
 
     private Pin _startPin;
+    private GameObject _wireGhost;
 
     private void OnEnable()
     {
@@ -21,7 +23,22 @@ public class Wiring : MonoBehaviour
         if (_startPin == null)
         {
             _startPin = clickedPin;
+            _startPin.OnDestroyed += () =>
+            {
+                if (_wireGhost != null)
+                {
+                    Destroy(_wireGhost);
+                    _wireGhost = null;
+                }
+            };
+            if (_startPin is Input input)
+            {
+                input.SetIncomingWire(null);
+            }
             _startPin.SetSelected();
+            _wireGhost = Instantiate(_wireGhostPrefab);
+            WireGhost wireGhost = _wireGhost.GetComponent<WireGhost>();
+            wireGhost.Initialize(_startPin);
             return;
         }
 
@@ -29,6 +46,8 @@ public class Wiring : MonoBehaviour
         {
             _startPin.ResetSelected();
             ResetSelection();
+            Destroy(_wireGhost);
+            _wireGhost = null;
             return;
         }
 
@@ -38,6 +57,8 @@ public class Wiring : MonoBehaviour
         CreateWire(_startPin, clickedPin);
         _startPin.ResetSelected();
         ResetSelection();
+        Destroy(_wireGhost);
+        _wireGhost = null;
     }
 
     private void CreateWire(Pin pinA, Pin pinB)

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d4f188666cc90f447a7d21268c62593c
+guid: f08bafacd83e2f0419d738ba6d8c06e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3891372186786497598
-    second: focus_frame_0
+      213: 6962826606374208346
+    second: exclamation_mark_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,23 +102,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: focus_frame_0
+      name: exclamation_mark_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 128
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 16, y: 16, z: 16, w: 16}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb71cd0d911ff9c0800000000000000
-      internalID: -3891372186786497598
+      spriteID: a53c29968ede0a060800000000000000
+      internalID: 6962826606374208346
       vertices: []
       indices: 
       edges: []
@@ -127,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 694c4152128d3c944972c31d00af2ac7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      focus_frame_0: -3891372186786497598
+      exclamation_mark_0: 6962826606374208346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

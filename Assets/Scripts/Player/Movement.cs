@@ -1,21 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof (PlayerInput), typeof (CharacterController))]
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private PlayerInput _playerInput;
-    [SerializeField] private CharacterController _controller;
-
     [SerializeField] private float walkSpeed = 3.5f;
     [SerializeField] private float sprintSpeed = 6f;
     [SerializeField] private float gravity = -9.81f;
 
+    private CharacterController _controller;
+    private PlayerInput _playerInput;
     private InputAction _moveAction, _sprintAction;
-
     private float verticalVelocity;
 
     private void Awake()
     {
+        _controller = GetComponent<CharacterController>();
+        _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions.FindAction("Move", true);
         _sprintAction = _playerInput.actions.FindAction("Sprint", true);
     }

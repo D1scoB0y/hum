@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof (Pin), typeof (Renderer), typeof (BoxCollider))]
 public class PinView : MonoBehaviour
 {
+    [SerializeField] private Material _notConnected;
+    [SerializeField] private Material _selected;
     [SerializeField] private Material _none;
     [SerializeField] private Material _high;
     [SerializeField] private Material _low;
@@ -43,20 +45,26 @@ public class PinView : MonoBehaviour
     {
         SetVisible(_pin.Visible);
 
-        switch (_pin.Signal)
+        if (_pin.Connected)
         {
-            case SignalType.None:
-            _renderer.material = _none;
-            break;
-            case SignalType.Low:
-            _renderer.material = _low;
-            break;
-            case SignalType.High:
-            _renderer.material = _high;
-            break;
+            switch (_pin.Signal)
+            {
+                case SignalType.None:
+                _renderer.material = _none;
+                break;
+                case SignalType.Low:
+                _renderer.material = _low;
+                break;
+                case SignalType.High:
+                _renderer.material = _high;
+                break;
+            }
+        } else
+        {
+            _renderer.material = _notConnected;
         }
 
         if (_pin.Selected)
-            _renderer.material = _none;
+            _renderer.material = _selected;
     }
 }

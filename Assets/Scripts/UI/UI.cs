@@ -2,24 +2,35 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof (Inventory), typeof (Interaction), typeof (Placement))]
 public class UI : MonoBehaviour
 {
-    [SerializeField] private Inventory _inventory;
-    [SerializeField] private Interaction _interaction;
-    [SerializeField] private Placement _placement;
     [SerializeField] private SlotUI[] _slotsUIs;
     [SerializeField] private Image _key;
     [SerializeField] private TextMeshProUGUI _interactionText;
     [SerializeField] private TextMeshProUGUI _selectedSlotText;
     [SerializeField] private FocusFrame _focusFrame;
+    [SerializeField] private TextMeshProUGUI _stageTitleText;
+    [SerializeField] private TextMeshProUGUI _stageDescriptionText;
 
-    private Bounds _interactionTargetBounds;
+    private Inventory _inventory;
+    private Interaction _interaction;
+    private Placement _placement;
+
+    private void Awake()
+    {
+        _inventory = GetComponent<Inventory>();
+        _interaction = GetComponent<Interaction>();
+        _placement = GetComponent<Placement>();
+    }
 
     private void OnEnable()
     {
         _inventory.OnChanged += UpdateUI;
         _interaction.OnTargetChanged += UpdateUI;
         _placement.OnSlotChanged += UpdateUI;
+
+        ObjectiveManager.Instance.OnObjectiveChanged += UpdateObjectiveUI;
     }
 
     private void OnDisable()
@@ -27,6 +38,8 @@ public class UI : MonoBehaviour
         _inventory.OnChanged -= UpdateUI;
         _interaction.OnTargetChanged -= UpdateUI;
         _placement.OnSlotChanged -= UpdateUI;
+
+        ObjectiveManager.Instance.OnObjectiveChanged -= UpdateObjectiveUI;
     }
 
     private void Start()
@@ -37,7 +50,8 @@ public class UI : MonoBehaviour
 
     private void UpdateUI()
     {
-        _key.enabled = _inventory.HasKey();
+        if (_key != null)
+            _key.enabled = _inventory.HasKey();
 
         for (int i = 0; i < _inventory.Slots.Length; ++i)
         {
@@ -55,18 +69,19 @@ public class UI : MonoBehaviour
         {
             _selectedSlotText.text = _inventory.Slots[_placement.SelectedSlot].item.Name();
         }
+    }
 
-        if (_interaction.Target is Component component)
-        {
-            _interactionTargetBounds = component.GetComponent<Renderer>().bounds;
-        }
+    private void UpdateObjectiveUI()
+    {
+        _stageTitleText.text = ObjectiveManager.Instance.CurrentObjective.Title;
+        _stageDescriptionText.text = ObjectiveManager.Instance.CurrentObjective.Description;
     }
 
     private void Update()
     {
         if (_interaction.Target != null)
         {
-            _focusFrame.Show(_interactionTargetBounds);
+            _focusFrame.Show(_interaction.Target.GetBounds());
         } else
         {
             _focusFrame.Hide();

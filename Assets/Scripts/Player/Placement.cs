@@ -3,18 +3,20 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using KbKey = UnityEngine.InputSystem.Key;
 
+[RequireComponent(typeof (PlayerInput), typeof (Inventory), typeof (Interaction))]
 public class Placement : MonoBehaviour
 {
-    [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Camera _camera;
-    [SerializeField] private Inventory _inventory;
     [SerializeField] private LayerMask _placementMask;
     [SerializeField] private float _ghostDistance = 2.5f;
-    [SerializeField] private float _gridStep = 0.1f;
+    [SerializeField] private float _gridStep = 0.05f;
     [SerializeField] private Material _allowedLocationMaterial;
     [SerializeField] private Material _disallowedLocationMaterial;
     [SerializeField] private GameObject _grid;
-    [SerializeField] private Interaction _interaction;
+
+    private PlayerInput _playerInput;
+    private Interaction _interaction;
+    private Inventory _inventory;
 
     private GameObject _ghost;
     private Renderer _ghostRenderer;
@@ -29,7 +31,10 @@ public class Placement : MonoBehaviour
 
     private void Awake()
     {
-        _placeAction = _playerInput.actions.FindAction("Interact");
+        _inventory = GetComponent<Inventory>();
+        _interaction = GetComponent<Interaction>();
+        _playerInput = GetComponent<PlayerInput>();
+        _placeAction = _playerInput.actions.FindAction("Interact", true);
         _grid.SetActive(false);
     }
 
@@ -97,11 +102,13 @@ public class Placement : MonoBehaviour
         Material mat = _disallowedLocationMaterial;
 
         Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f, 0.5f));
+        // if (Physics.Raycast(ray, out RaycastHit hit, _ghostDistance))
         if (Physics.Raycast(ray, out RaycastHit hit, _ghostDistance, _placementMask))
         {
             position = hit.point;
             position.x = Mathf.Round(position.x / _gridStep) * _gridStep;
             position.y = Mathf.Round(position.y / _gridStep) * _gridStep;
+            position.z = Mathf.Round(position.z / _gridStep) * _gridStep;
 
             rotation = Quaternion.LookRotation(-hit.normal) * Quaternion.Euler(0f, 90f, -90f);
             mat = _allowedLocationMaterial;

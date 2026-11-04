@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="IslkKpmLwBlH02YU_IF4">
+    <mxGraphModel dx="3213" dy="1771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-3" edge="1" parent="1" source="2a0n3fkwrNPuAg8MbIe_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="2a0n3fkwrNPuAg8MbIe_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-29" edge="1" parent="1" source="2a0n3fkwrNPuAg8MbIe_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Исследуйте лобби" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-6" edge="1" parent="1" source="2a0n3fkwrNPuAg8MbIe_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="2a0n3fkwrNPuAg8MbIe_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-33" edge="1" parent="1" source="2a0n3fkwrNPuAg8MbIe_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Проникните в трансформаторную будку" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Провзаимодействовать с дверью трансформаторной будки&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="170" x="210" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-15" edge="1" parent="1" source="2a0n3fkwrNPuAg8MbIe_-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-35" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="160" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2a0n3fkwrNPuAg8MbIe_-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Проникните в трансформаторную будку" vertex="1">
+          <mxGeometry height="80" width="120" x="720" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ключ попал в инвентарь" vertex="1">
+          <mxGeometry height="35" width="180" x="530" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-12" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-42" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Восстановите защитную микросхему" vertex="1">
+          <mxGeometry height="80" width="120" x="1680" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Построить правильную логическую схему и дернуть рычаг" vertex="1">
+          <mxGeometry height="60" width="200" x="1800" y="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-9" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-39" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Найдите способ восстановить защитную микросхему" vertex="1">
+          <mxGeometry height="80" width="120" x="1360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Открыть дверь в трансформаторную будку" vertex="1">
+          <mxGeometry height="30" width="160" x="860" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Инвентарь содержит как минимум элементы И, НЕ" vertex="1">
+          <mxGeometry height="30" width="150" x="1510" y="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-19" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-46" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Проникнуть в главный корпус" vertex="1">
+          <mxGeometry height="80" width="120" x="2000" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-50" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Восстановить панель управления дверью" vertex="1">
+          <mxGeometry height="80" width="120" x="2320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-16" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Перезагрузите основной источник питания" vertex="1">
+          <mxGeometry height="80" width="120" x="1040" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Дернуть рычаг" vertex="1">
+          <mxGeometry height="30" width="100" x="1200" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Конец" vertex="1">
+          <mxGeometry height="80" width="120" x="2640" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Провзаимодействовать с дверью в главный корпус" vertex="1">
+          <mxGeometry height="60" width="200" x="2110" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-21" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2440" y="120" as="sourcePoint" />
+            <mxPoint x="2640" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Построить правильную логическую схему и провзаимодействовать с дверью" vertex="1">
+          <mxGeometry height="60" width="200" x="2440" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Рычаг перестает быть интеракцивным (BrokenSwitch).&lt;br&gt;Записка в трансформаторной будке становиться интерактивной.&lt;br&gt;Логические блоки находящиеся на локации становятся интерактивными." vertex="1">
+          <mxGeometry height="130" width="210" x="1315" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Свет включается.&lt;br&gt;Все записки становятся интерактивными.&lt;br&gt;Дверь в главный корпус становиться интерактивной (DoorDummy).&lt;br&gt;Рычаг перестает быть интеракцивным (Validator)" vertex="1">
+          <mxGeometry height="130" width="180" x="1970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Найдите способ включить электричество" vertex="1">
+          <mxGeometry height="110" width="170" x="55" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-32" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Найдите ключ от двери" vertex="1">
+          <mxGeometry height="110" width="170" x="375" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Используйте рычаг" vertex="1">
+          <mxGeometry height="110" width="180" x="1010" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-36" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Откройте дверь" vertex="1">
+          <mxGeometry height="110" width="170" x="695" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-37" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="160" as="sourcePoint" />
+            <mxPoint x="780" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-40" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-38" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Найдите недостающие элементы" vertex="1">
+          <mxGeometry height="130" width="200" x="1320" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-41" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Восстановите логическую функцию защитной микросхемы" vertex="1">
+          <mxGeometry height="130" width="200" x="1640" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пины в трансформаторной будке становятся видимыми и интерактивными.&lt;br&gt;Рычаг становиться интеракцивным (Validator)." vertex="1">
+          <mxGeometry height="130" width="210" x="1635" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-44" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1740" y="330" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-47" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-45" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Откройте дверь" vertex="1">
+          <mxGeometry height="130" width="200" x="1960" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-51" edge="1" parent="1" source="xgNz4y3TxY4BONRwLQLW-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="xgNz4y3TxY4BONRwLQLW-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-48" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Востановите логическую функцию панели управления дверью" vertex="1">
+          <mxGeometry height="130" width="200" x="2280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xgNz4y3TxY4BONRwLQLW-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пины становятся видимыми.&lt;br&gt;Дверь становиться интерактивной (-DoorDummy, +Validator)" vertex="1">
+          <mxGeometry height="110" width="180" x="2290" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,30 +1,31 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public sealed class Look : MonoBehaviour
+[RequireComponent(typeof (PlayerInput))]
+public class Look : MonoBehaviour
 {
-    [SerializeField] private Transform cameraPivot;
-    [SerializeField] private float sensitivity = 0.08f;
-    [SerializeField] private float minPitch = -85f;
-    [SerializeField] private float maxPitch = 85f;
+    [SerializeField] private Transform _cameraTransform;
+    [SerializeField] private float _sensitivity = 0.08f;
+    [SerializeField] private float _minPitch = -85f;
+    [SerializeField] private float _maxPitch = 85f;
 
-    private float yaw;
-    private float pitch;
+    private float _yaw;
+    private float _pitch;
 
-    private PlayerInput input;
+    private PlayerInput _playerInput;
 
     private InputAction action;
 
     private void Awake()
     {
-        input = GetComponent<PlayerInput>();
-        action = input.actions.FindAction("Look", true);
+        _playerInput = GetComponent<PlayerInput>();
+        action = _playerInput.actions.FindAction("Look", true);
 
-        yaw = transform.localEulerAngles.y;
+        _yaw = transform.localEulerAngles.y;
 
-        pitch = cameraPivot.localEulerAngles.x;
-        if (pitch > 180f)
-            pitch -= 360f;
+        _pitch = _cameraTransform.localEulerAngles.x;
+        if (_pitch > 180f)
+            _pitch -= 360f;
     }
 
     private void OnEnable()
@@ -45,11 +46,11 @@ public sealed class Look : MonoBehaviour
     {
         Vector2 delta = action.ReadValue<Vector2>();
 
-        yaw += delta.x * sensitivity;
-        pitch -= delta.y * sensitivity;
-        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+        _yaw += delta.x * _sensitivity;
+        _pitch -= delta.y * _sensitivity;
+        _pitch = Mathf.Clamp(_pitch, _minPitch, _maxPitch);
 
-        transform.localRotation = Quaternion.Euler(0f, yaw, 0f);
-        cameraPivot.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(0f, _yaw, 0f);
+        _cameraTransform.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
     }
 }

@@ -1,18 +1,16 @@
 using UnityEngine;
 
-public class ElectricalSwitch : MonoBehaviour, IInteractable
+public class ElectricalSwitch : Interactable
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private Light[] _lights;
     [SerializeField] private Light _redLight;
 
-    [SerializeField] private Validation _validation;
-
     private readonly int _hashedIsOnAnimatorParam = Animator.StringToHash("isOn");
 
     private bool isOn = false;
 
-    public void Interact(InteractionContext _)
+    public override void Interact(InteractionContext _)
     {
         if (!isOn)
         {
@@ -25,12 +23,10 @@ public class ElectricalSwitch : MonoBehaviour, IInteractable
             }
 
             _redLight.enabled = false;
-
-            _validation.Test();
         }
     }
 
-    public string GetDescription(InteractionContext _)
+    public override string GetDescription(InteractionContext _)
     {
         if (!isOn)
         {

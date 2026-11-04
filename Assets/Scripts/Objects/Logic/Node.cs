@@ -66,17 +66,18 @@ public class Node : MonoBehaviour
             }
         }
 
-        return 0;
+        return SignalType.Low;
     }
 
     private SignalType EvaluateXor()
     {
-        if (_inputs[0].Evaluate() == SignalType.High && _inputs[1].Evaluate() == SignalType.Low || _inputs[0].Evaluate() == SignalType.Low && _inputs[1].Evaluate() == SignalType.High)
+        if (_inputs[0].Evaluate() == SignalType.High && _inputs[1].Evaluate() == SignalType.Low
+            || _inputs[0].Evaluate() == SignalType.Low && _inputs[1].Evaluate() == SignalType.High)
         {
             return SignalType.High;
         }
 
-        return 0;
+        return SignalType.Low;
     }
 
     private void OnDestroy()

@@ -6,7 +6,7 @@ public class FocusFrame : MonoBehaviour
     [SerializeField] private RectTransform _canvasRect;
     [SerializeField] private Camera _camera;
 
-    private float _padding = 8f;
+    private readonly float _padding = 8f;
 
     public void Show(Bounds bounds)
     {
